@@ -36,15 +36,6 @@ const allProjects = [
     tags: ["JavaScript", "HTML", "CSS", "Chart.js"],
     githubUrl: "https://github.com/Limlim-12/donow-app"
   },
-  {
-    id: 4,
-    title: "Love Disc",
-    category: "Creative",
-    description: "A personal gift webpage. Clicking the vinyl record plays a song and reveals a hidden message.",
-    imageUrl: "/images/lovedisc.jpg",
-    tags: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/Limlim-12/love-disc"
-  }
 ];
 
 export default function Projects() {
