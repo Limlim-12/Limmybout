@@ -1,0 +1,7 @@
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-gray-400 p-6 text-center">
+      <p>&copy; {new Date().getFullYear()} Limmybout. All rights reserved.</p>
+    </footer>
+  );
+}
