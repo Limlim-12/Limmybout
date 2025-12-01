@@ -11,6 +11,7 @@ const navItems = [
   { name: 'About', path: '/about' },
   { name: 'Skills', path: '/skills' },
   { name: 'Projects', path: '/projects' },
+  { name: 'Guestbook', path: '/guestbook' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -182,11 +183,13 @@ function NavbarContent() {
   );
 }
 
-// Ensure SessionProvider wraps the component
-export default function Navbar() {
-  return (
-    <SessionProvider>
-      <NavbarContent />
-    </SessionProvider>
-  );
-}
+export default NavbarContent;
+
+// // Ensure SessionProvider wraps the component
+// export default function Navbar() {
+//   return (
+//     <SessionProvider>
+//       <NavbarContent />
+//     </SessionProvider>
+//   );
+// }
