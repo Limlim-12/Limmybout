@@ -54,10 +54,10 @@ export default function About() {
            <div className="absolute -top-1 -right-1 w-20 h-20 bg-gradient-to-bl from-blue-500/20 to-transparent rounded-tr-2xl -z-10" />
 
           <p>
-            Hello, I'm <span className="text-white font-bold">Lim</span>! I'm a <span className="text-blue-400 font-medium">Computer Engineering graduate</span> currently working as a Technical Support Specialist. I'm a passionate, aspiring developer, and this site is a showcase of my journey toward my dream of becoming a <span className="text-purple-400 font-semibold">Software Engineer</span>.
+            Hello, I'm <span className="text-white font-bold">Lim</span>! I'm a <span className="text-blue-400 font-medium">Computer Engineering graduate</span> currently working as a Technical and Product Support Specialist. I'm a passionate, aspiring developer, and this site is a showcase of my journey toward my dream of becoming a <span className="text-purple-400 font-semibold">Software Engineer</span>.
           </p>
           <p>
-            I've always found coding interesting because of its power to make our lives easier and more comfortable. I know the path is challenging, but I'm a firm believer that <span className="italic text-white">"if you truly love what you are doing, you're living the dream."</span>
+            I've always found coding interesting because of its power to make our lives easier and comfortable. I know the path is challenging, but I'm a firm believer that <span className="italic text-white">"if you truly love what you are doing, you're living the dream."</span>
           </p>
           <p>
             For me, that passion comes from the creative process. I love bringing new ideas to life and exploring their full potential through code. My current goal is to grow into a <span className="text-teal-400 font-semibold">full-stack developer</span>, capable of building and managing entire applications.
