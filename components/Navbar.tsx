@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { signIn, signOut, useSession, SessionProvider } from 'next-auth/react';
 
+
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },

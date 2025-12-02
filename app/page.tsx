@@ -5,13 +5,13 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden">
+    <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-4">
       
       {/* Background Glow Effects */}
       <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-purple-500/30 rounded-full blur-3xl" />
       <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
 
-      <div className="z-10 text-center px-4 max-w-4xl">
+      <div className="z-10 text-center max-w-4xl w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,6 +31,17 @@ export default function Home() {
           I'm <span className="text-white">Lim</span>. <br />
           I build <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">interactive</span> experiences.
         </motion.h1>
+
+        {/* --- WEATHER WIDGET SECTION --- */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mx-auto max-w-xs mb-10"
+        >
+          
+        </motion.div>
+        {/* ----------------------------- */}
 
         <motion.p
           initial={{ opacity: 0 }}

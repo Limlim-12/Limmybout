@@ -6,7 +6,9 @@ import Footer from '@/components/Footer';
 import Providers from '@/components/Providers';
 import VisitorCounter from '@/components/VisitorCounter';
 import OfflineGame from '@/components/OfflineGame';
-import Preloader from '@/components/Preloader'; // <--- 1. Import this
+import Preloader from '@/components/Preloader';
+import MagneticCursor from '@/components/MagneticCursor';
+import WeatherWidget from '@/components/WeatherWidget';
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
@@ -29,11 +31,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    // START FIX: Add suppressHydrationWarning here
     <html lang="en">
-      <body className={`${spaceGrotesk.className} flex flex-col min-h-screen bg-slate-950 text-slate-100 overflow-x-hidden selection:bg-purple-500/30`}>
+    {/* END FIX */}
+      <body className={`${spaceGrotesk.className} flex flex-col min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-primary/30 cursor-none`}>
         <Providers>
-          
-          <Preloader /> {/* <--- 2. Add this right at the top */}
+          <Preloader />
+          <MagneticCursor />
           
           <div className="fixed inset-0 z-[-1]">
              <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[128px] animate-pulse" />
@@ -48,6 +52,7 @@ export default function RootLayout({
           
           <Footer />
           <VisitorCounter />
+          <WeatherWidget />
           <OfflineGame /> 
           
         </Providers>
